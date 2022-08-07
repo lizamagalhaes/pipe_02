@@ -7,3 +7,4 @@ A ideia aqui é escrever um programa (pipe_02.c) que atualize a função fork, d
 A soma dos números de 1 a 10 é mostrada no processo pai usando os dados complementares obtidos do processo filho com o uso de pipe.
 
 Feito por: Isaú Lucas e Liza Magalhães.
+
