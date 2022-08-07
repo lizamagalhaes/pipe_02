@@ -3,14 +3,13 @@
 
 int main(){
 int a[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-int somaFilho = 0, somaPai = 0,total,i;
+int somaFilho = 0, somaPai = 0, total, i;
 int p[2];
 pid_t n;
 
 if(pipe(p)<0){
    perror("pipe");
    return -1;
-
 }
 
 n=fork();
@@ -24,8 +23,7 @@ for (i = 0; i < 10; i++)
 	  read (p[0],&somaFilho,sizeof(somaFilho));   
       total = somaPai + somaFilho; 
       
-      printf("Soma total e igual a %d \n",total);
-
+      printf("A soma total é igual a:  %d \n",total);
 }
 else{
  for (i = 0; i < 10; i++)
@@ -35,7 +33,5 @@ else{
 	}
       write (p[1],&somaFilho,sizeof(somaFilho));  
 }
-
 return 0;
-
 }
