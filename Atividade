@@ -24,7 +24,7 @@ for (i = 0; i < 10; i++)
 	  read (p[0],&somaFilho,sizeof(somaFilho));   
       total = somaPai + somaFilho; 
       
-      printf("Soma total e igual a %d \n",total);
+      printf("A soma total é igual a: %d \n",total);
 
 }
 else{
